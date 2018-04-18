@@ -6,7 +6,7 @@ import math
 import sys
 import csv
 import glob
-
+# test
 def mouse_clb(event,x,y,flags,param):
     if event == cv2.EVENT_LBUTTONDOWN:
         if rbuttondown == True:
