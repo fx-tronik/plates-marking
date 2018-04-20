@@ -150,6 +150,9 @@ while (1):
         if(len(tablica_znaki[numer]) < max_liczba_znakow):
             tablica_znaki[numer] += chr(c).upper()
 
+    if(c >= 176 and c <= 185):   # numpad 0-9
+        if(len(tablica_znaki[numer]) < max_liczba_znakow):
+            tablica_znaki[numer] += znak[c-175]
     if(c == 27):    # ESC
         break
     if(c == 225 or c == 226):    # SHIFT lewy lub prawy
